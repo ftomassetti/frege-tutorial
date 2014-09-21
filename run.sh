@@ -6,4 +6,4 @@ fi
 
 MVN_CLASSPATH=`cat classpath.conf`
 
-java -classpath target/classes:$MVN_CLASSPATH Main
+java -classpath target/classes:$MVN_CLASSPATH HelloWorld
