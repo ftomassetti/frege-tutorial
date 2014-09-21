@@ -17,4 +17,5 @@ fi
 unzip -o $NATIVE_GEN_ZIP 
 mvn install:install-file -Dfile=$NATIVE_GEN_JAR -DgroupId=com.github.frege -DartifactId=native-gen -Dversion=${NATIVE_GEN_VERSION} -Dpackaging=jar
 cp types.properties $CURR_DIR/
+cp lib/frege-3.21.440-gd7ba043.jar $CURR_DIR/native-gen-lib
 cd $CURR_DIR

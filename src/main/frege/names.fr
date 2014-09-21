@@ -1,0 +1,31 @@
+module Names where
+
+data ArrayList e = native java.util.ArrayList where
+
+  native new :: () -> STMutable s (ArrayList e)              
+
+  native add :: Mutable s (ArrayList e) -> e -> ST s Bool
+
+data Language = pure native com.github.langgen.Language where
+
+  native new :: Mutable s (ArrayList String) -> ST s Language
+
+  native addSample :: Language -> String -> ST s ()
+
+  native name :: Language -> ST s String
+
+main :: IO ()
+main = do samples <- ArrayList.new ()
+          res <- ArrayList.add samples "Nanana"
+          res <- ArrayList.add samples "Namana"
+          res <- ArrayList.add samples "Namama"
+          res <- ArrayList.add samples "Nana"
+          res <- ArrayList.add samples "Nama"
+          res <- ArrayList.add samples "Namamama"
+          language <- Language.new samples          
+          nameA <- Language.name language
+          nameB <- Language.name language
+          nameC <- Language.name language
+          putStrLn ("1) " ++ nameA)
+          putStrLn ("2) " ++ nameB)
+          putStrLn ("3) " ++ nameC)

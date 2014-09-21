@@ -74,6 +74,7 @@
                     <inline>true</inline>
                     <hints>true</hints>
                     <includeStale>false</includeStale>
+                    <sourceDirectory>src/main/frege</sourceDirectory>
                 </configuration>
             </plugin>
 
