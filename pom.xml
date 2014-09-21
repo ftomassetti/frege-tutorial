@@ -86,5 +86,16 @@
             <artifactId>frege</artifactId>
             <version>3.21.586-g026e8d7</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.lands</groupId>
+            <artifactId>lands-java-lib</artifactId>
+            <version>0.3-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.frege</groupId>
+            <artifactId>native-gen</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
+
 </project>

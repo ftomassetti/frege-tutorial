@@ -15,3 +15,6 @@ hs_err_pid*
 classpath.conf
 
 target
+
+# obtained from frege/native-gen
+types.properties
